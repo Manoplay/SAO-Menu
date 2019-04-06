@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		191AF4C421D7B17800FC1654 /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191AF4C221D7B17800FC1654 /* CollectionViewItem.swift */; };
+		191AF4C721D7CE8F00FC1654 /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191AF4C621D7CE8F00FC1654 /* CollectionViewItem.xib */; };
+		191AF4CA21D7D1A200FC1654 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191AF4C921D7D1A200FC1654 /* Contacts.framework */; };
 		196C894F21C02AFB00F5A676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196C894E21C02AFB00F5A676 /* AppDelegate.swift */; };
 		196C895121C02AFB00F5A676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196C895021C02AFB00F5A676 /* Assets.xcassets */; };
 		196C895421C02AFC00F5A676 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 196C895221C02AFC00F5A676 /* MainMenu.xib */; };
@@ -32,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		191AF4C221D7B17800FC1654 /* CollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
+		191AF4C621D7CE8F00FC1654 /* CollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
+		191AF4C921D7D1A200FC1654 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		196C894B21C02AFB00F5A676 /* SAO SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAO SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		196C894E21C02AFB00F5A676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		196C895021C02AFB00F5A676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				191AF4CA21D7D1A200FC1654 /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		191AF4C821D7D1A100FC1654 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				191AF4C921D7D1A200FC1654 /* Contacts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		196C894221C02AFA00F5A676 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +92,7 @@
 				196C895D21C02AFC00F5A676 /* SAO SDKTests */,
 				196C896821C02AFC00F5A676 /* SAO SDKUITests */,
 				196C894C21C02AFB00F5A676 /* Products */,
+				191AF4C821D7D1A100FC1654 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				196C894E21C02AFB00F5A676 /* AppDelegate.swift */,
+				191AF4C621D7CE8F00FC1654 /* CollectionViewItem.xib */,
+				191AF4C221D7B17800FC1654 /* CollectionViewItem.swift */,
 				196C895021C02AFB00F5A676 /* Assets.xcassets */,
 				196C895221C02AFC00F5A676 /* MainMenu.xib */,
 				196C895521C02AFC00F5A676 /* Info.plist */,
@@ -228,6 +246,7 @@
 			files = (
 				196C895121C02AFB00F5A676 /* Assets.xcassets in Resources */,
 				196C895421C02AFC00F5A676 /* MainMenu.xib in Resources */,
+				191AF4C721D7CE8F00FC1654 /* CollectionViewItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				196C894F21C02AFB00F5A676 /* AppDelegate.swift in Sources */,
+				191AF4C421D7B17800FC1654 /* CollectionViewItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +512,7 @@
 				196C897021C02AFC00F5A676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		196C897121C02AFC00F5A676 /* Build configuration list for PBXNativeTarget "SAO SDKTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +521,7 @@
 				196C897321C02AFC00F5A676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		196C897421C02AFC00F5A676 /* Build configuration list for PBXNativeTarget "SAO SDKUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +530,7 @@
 				196C897621C02AFC00F5A676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

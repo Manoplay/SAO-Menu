@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G22010" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="SAO_SDK" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="Xdz-OM-qm5" id="Oe3-4D-UfA"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="MmW-Pc-07p"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdz-OM-qm5">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="48"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <buttonCell key="cell" type="square" title="Testo" bezelStyle="shadowlessSquare" image="btn_pressed" imagePosition="overlaps" alignment="center" alternateImage="btn_normal" imageScaling="axesIndependently" inset="2" id="osj-TU-NoP">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" size="16" name="SAOUI-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="buttonClick:" target="-2" id="7gj-Lo-QUj"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fqe-c8-Q8m">
+                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="nMc-xg-CZh"/>
+                </imageView>
+            </subviews>
+            <point key="canvasLocation" x="-7" y="56"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="btn_normal" width="70" height="30"/>
+        <image name="btn_pressed" width="70" height="30"/>
+    </resources>
+</document>
